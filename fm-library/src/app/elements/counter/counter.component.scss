@@ -1,0 +1,64 @@
+@import 'src/assets/styles/colors';
+@import 'src/assets/styles/fonts';  
+
+.da-counter-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 155px;
+    height: 42px;
+
+    .da-counter {
+        font-family: $font;
+        width: 65px;
+        height: 42px;
+        border-radius: 21px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        box-shadow: 0 3px 5px $shadow-base-color;
+
+        &.light {
+            box-shadow: 0 3px 5px $shadow-secondary-color;
+        }
+    
+        input {
+            border: none;
+            text-align: center;
+            width: 80%;
+        }
+    }
+    .da-counter-btn {
+        color: $button-base-color;
+        border: none;
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+        background-color: #fff;
+        box-shadow: 0 3px 5px $shadow-base-color;
+        cursor: pointer;
+
+        &.light {
+            box-shadow: 0 3px 5px $shadow-secondary-color;
+        }
+
+        &:hover {
+            background-color: #ccc;
+        }
+        &:active {
+            background-color: $button-base-color;
+            color: #fff;
+
+            &.light {
+                background-color: $button-secondary-color;
+                color: $button-base-color;
+            }
+        }
+    }
+}
+
+
+// * {
+//     outline: 1px solid red;
+// }
